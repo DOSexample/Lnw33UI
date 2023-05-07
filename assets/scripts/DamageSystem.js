@@ -138,19 +138,19 @@ function ShowSkullAnimation() {
 
 
 //For test
-//setInterval( function() {
+// setInterval( function() {
 //    var m1 = parseInt(Math.random()*10000000000000).toString();
 //    var m2 = parseInt(Math.random()*10000000000000).toString();
 //    var c1 = parseInt(Math.random()*10)%4;
 //    var c2 = parseInt(Math.random()*10)%4;
 //    addDamageText("dos"+m1, "dos"+m2, c1, c2);
-//}, 1000 );
-//addDamageText("dos156789123", "dos256789123", 0, 1);
-//addDamageText("dos1", "dos2", 1, 2);
-//addDamageText("dos3", "dos4", 2, 3);
-//addDamageText("dos5", "dos6", 3, 0);
-//addDamageText("dos7", "dos8", 3, 0);
-//addDamageText("dos7", "dos8", 3, 0);
-//setInterval( function(){
+// }, 1000 );
+// addDamageText("dos156789123", "dos256789123", 0, 1);
+// addDamageText("dos1", "dos2", 1, 2);
+// addDamageText("dos3", "dos4", 2, 3);
+// addDamageText("dos5", "dos6", 3, 0);
+// addDamageText("dos7", "dos8", 3, 0);
+// addDamageText("dos7", "dos8", 3, 0);
+// setInterval( function(){
 //    ShowSkullAnimation();
-//}, 1000 );
+// }, 1000 );

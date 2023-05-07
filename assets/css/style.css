@@ -1,9 +1,9 @@
 body{
-  margin:0;
-  color:#fff;
-  font-family:open sans;
-  overflow: hidden;
-}
+    margin:0;
+    color:#fff;
+    font-family:open sans;
+    overflow: hidden;
+  }
 
 p{
   margin:0;
@@ -20,7 +20,7 @@ p{
 
 .tagElement img {
   width: 40px;
-  margin: 0 10px;
+  margin: 0 9px;
 }
 
 .killed {
@@ -33,24 +33,33 @@ p{
 }
 
 .damage_area {
-  position: fixed;
-  top: 20%;
-  text-shadow: #FC0 1px 0 10px;
+    position: fixed;
+    top: 20%;
+    width: 400px;
+    text-shadow: rgba(165, 157, 42, 0.555) 1px 0 10px;
+    margin-left: 5px;
 }
 
-.damage_area p {
-  margin-top: 5px;
-  background-color: rgba(0,0,0, 0.8);
-  border-radius: 5px;
+.damage_area p {    
+    
+    background-color: rgba(0,0,0, 0.4);
+    margin-top: 5px;
+    border-radius: 5px;
+    
 }
 
 .killer_skull {
-  position: fixed;
-  top: 35%;
-  left: 45%;
+    position: fixed;
+    top: 35%;
+    left: 45%;
 }
+
 .killer_skull div {
   width: 105px; 
   height: 110px;
   background: url("../images/UI_ICON_KILL.png") no-repeat;
+}
+
+#textContainer{
+    display: inline-block;
 }
