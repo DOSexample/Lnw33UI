@@ -1,9 +1,9 @@
 body{
-    margin:0;
-    color:#fff;
-    font-family:open sans;
-    overflow: hidden;
-  }
+  margin:0;
+  color:#fff;
+  font-family:open sans;
+  overflow: hidden;
+}
 
 p{
   margin:0;
@@ -20,7 +20,7 @@ p{
 
 .tagElement img {
   width: 40px;
-  margin: 0 9px;
+  margin: 0 10px;
 }
 
 .killed {
@@ -33,20 +33,6 @@ p{
 }
 
 .damage_area {
-    position: fixed;
-    top: 20%;
-    width: 400px;
-    text-shadow: rgba(165, 157, 42, 0.555) 1px 0 10px;
-    margin-left: 5px;
-}
-
-.damage_area p {    
-    
-    background-color: rgba(0,0,0, 0.4);
-    margin-top: 5px;
-    border-radius: 5px;
-    
-=======
   position: fixed;
   top: 20%;
   width: 400px;
@@ -60,11 +46,10 @@ p{
 }
 
 .killer_skull {
-    position: fixed;
-    top: 35%;
-    left: 45%;
+  position: fixed;
+  top: 35%;
+  left: 45%;
 }
-
 .killer_skull div {
   position: absolute;
   width: 105px; 
@@ -73,7 +58,5 @@ p{
 }
 
 #textContainer{
-    display: inline-block;
-=======
   display: inline-block;
 }
