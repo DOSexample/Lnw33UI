@@ -88,35 +88,51 @@ function startDamageTextLogic()
 
 
 /*START: Skull Animation*/
-var killer_skull = document.getElementById("killer_skull");
+//var killer_skull = document.getElementById("killer_skull");
+//function ShowSkullAnimation_old() {
+//    if(killer_skull.childElementCount >= 1) return;
+//
+//	var k = document.createElement("img");    
+//	k.src = config.getImage("UI_ICON_KILL");
+//    k.style.position = "absolute";
+//	killer_skull.appendChild(k);
+//
+//    var op = 0.1;
+//    var increment = +0.1;
+//    k.style.opacity = 0;
+//    //k.style.display = 'inline';
+//	var kwidth = 105;
+//	var kheight = 110;
+//	//k.style.width = kwidth + "%";
+//	var wIncrement = 2;
+//
+//    var timer = setInterval(function(k) {
+//        k.style.width = kwidth + wIncrement + "px";
+//        k.style.height = kheight + wIncrement + "px";
+//        kwidth++;
+//        kheight++;
+//        op += increment;
+//        k.style.opacity = op;
+//        if (op >= 1) increment = -increment;
+//        if (op <= 0) {
+//            k.style.display = 'none';
+//            killer_skull.removeChild(killer_skull.getElementsByTagName("img")[0]);
+//            clearInterval(timer); // end
+//        }
+//    }, 50, k);
+//}
+
 function ShowSkullAnimation() {
-	var k = document.createElement("img");    
-	k.src = config.getImage("UI_ICON_KILL");
-    k.style.position = "absolute";
-	killer_skull.appendChild(k);
+    var kid = "#killer_skull";
+    if( $(kid).children().length > 0 ) return;
 
-    var op = 0.1;
-    var increment = +0.1;
-    k.style.opacity = 0;
-    //k.style.display = 'inline';
-	var kwidth = 105;
-	var kheight = 110;
-	//k.style.width = kwidth + "%";
-	var wIncrement = 2;
-
-    var timer = setInterval(function() {
-	k.style.width = kwidth + wIncrement + "px";
-	k.style.height = kheight + wIncrement + "px";
-	kwidth++;
-	kheight++;
-        op += increment;
-        k.style.opacity = op;
-        if (op >= 1) increment = -increment;
-        if (op <= 0) {
-            k.style.display = 'none';
-            clearInterval(timer); // end
-        }
-    }, 50);
+    $(kid).append("<div>");
+    $(kid).fadeOut(500, function(){    
+        $(kid).children().remove();
+    })
+    .delay(300)
+    .fadeIn(400)
+    ;
 }
 /*END: Skull Animation*/
 

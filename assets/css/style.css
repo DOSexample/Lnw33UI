@@ -1,9 +1,9 @@
 body{
-    margin:0;
-    color:#fff;
-    font-family:open sans;
-    overflow: hidden;
-  }
+  margin:0;
+  color:#fff;
+  font-family:open sans;
+  overflow: hidden;
+}
 
 p{
   margin:0;
@@ -33,20 +33,24 @@ p{
 }
 
 .damage_area {
-    position: fixed;
-    top: 20%;
-    width: 40%;
-    text-shadow: #FC0 1px 0 10px;
+  position: fixed;
+  top: 20%;
+  text-shadow: #FC0 1px 0 10px;
 }
 
 .damage_area p {
-    margin-top: 5px;
-    /*background-image: url("../images/damageBG.png");*/
-    background-color: rgba(0,0,0, 0.5);
+  margin-top: 5px;
+  background-color: rgba(0,0,0, 0.8);
+  border-radius: 5px;
 }
 
 .killer_skull {
-    position: fixed;
-    top: 35%;
-    left: 45%;
+  position: fixed;
+  top: 35%;
+  left: 45%;
+}
+.killer_skull div {
+  width: 105px; 
+  height: 110px;
+  background: url("../images/UI_ICON_KILL.png") no-repeat;
 }
