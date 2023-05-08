@@ -43,6 +43,7 @@ function createTopKillRank(obj, id, top)
         <p class="right">Kills: 123</p>
     </div>
 */
+    console.log(top.name+","+top.clan+","+top.point);
     if(top.point>0)
     {
         const clan = config.clans[top.clan];
@@ -78,9 +79,9 @@ function createUITopKill(top1, top2, top3)
 
 //For test
 //createUITopKill(
-//    {name: 'DOS', point: 1, clan: 1},
-//    {name: 'DOS2', point: 2, clan: 2},
-//    {name: 'DOS3', point: 3, clan: 0}
+//    {name: 'FANTASTICV2', point: 5, clan: 2},
+//    {name: '', point: 0, clan: 0},
+//    {name: 'PrincessToey', point: 8, clan: 2}
 //);
 //setInterval( function(){
 //    createUITopKill(
