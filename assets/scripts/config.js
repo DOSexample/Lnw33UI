@@ -12,16 +12,16 @@ const config = {
     },
     clans: [
         {
-            "code": "ND", "color" : '#28CD00', "name": "Noble Dragon",        
+            "code": "ND", "color" : '#28CD00', "name": "Noble Dragon", "amblem": "Blue"
         },
         {
-            "code": "RS", "color" : '#00BDCD', "name": "Royal Snake",
+            "code": "RS", "color" : '#00BDCD', "name": "Royal Snake", "amblem": "Purple"
         },
         {
-            "code": "GT", "color" : '#CD2F00', "name": "Golden Tiger",
+            "code": "GT", "color" : '#CD2F00', "name": "Golden Tiger", "amblem": "Red"
         },
         {
-            "code": "N",  "color" : '#B8B8B8', "name": "Nangin",
+            "code": "N",  "color" : '#B8B8B8', "name": "Nangin", "amblem": "Grey"
         }
     ]
 }

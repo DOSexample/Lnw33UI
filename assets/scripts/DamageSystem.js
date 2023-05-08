@@ -4,7 +4,7 @@ var imageType = "_0_"; // true = colored, false = white;
 const damage_area = document.getElementById("damage_area");
 const MAX_DAMAGE_COUNT = 5;
 
-function addDamageText(attacker, defenser, attackerClan, defenserClan)
+function addDamageText(attackerName, defenserName, attackerClan, defenserClan)
 {
     if(!damage_area) return;
 
@@ -33,7 +33,7 @@ function addDamageText(attacker, defenser, attackerClan, defenserClan)
     }
 
     var p = document.createElement("p");
-    p.id="textContainer";
+    //p.id="textContainer";
     p.className = "tagElement";
     p.tickCount = new Date().getTime();
     //'<p class="tagElement">'+
@@ -46,13 +46,17 @@ function addDamageText(attacker, defenser, attackerClan, defenserClan)
     //;
     
     var attackerImg = createDamageImage(attackerClan);
-    var attackerSpan = createDamageSpan(attacker,attackerClan);
+    var attackerSpan = createDamageSpan(attackerName,attackerClan);
 
     var killedSpan = createDamageSpan("Killed");
     killedSpan.className = "killed";
+    //var killedSpan = document.createElement("img");
+    //killedSpan.src = config.getImage("UI_ICON_KILL");
+    //killedSpan.style.width = "7%";
+    //killedSpan.style.height = "7%";
 
     var defenserImg = createDamageImage(defenserClan);
-    var defenserSpan = createDamageSpan(defenser,defenserClan);
+    var defenserSpan = createDamageSpan(defenserName,defenserClan);
     
     p.appendChild(attackerImg);
     p.appendChild(attackerSpan);
@@ -123,20 +127,32 @@ function startDamageTextLogic()
 //    }, 50, k);
 //}
 
-function ShowSkullAnimation() {
-    var kid = "#killer_skull";
-    if( $(kid).children().length > 0 ) return;
+var killer_skull = $("#killer_skull");
 
-    $(kid).append("<div>");
-    $(kid).fadeOut(500, function(){    
-        $(kid).children().remove();
+function ShowSkullAnimation_Old() {
+    //if( $(kid).children().length > 0 ) return;
+
+    killer_skull.append("<div>");
+    killer_skull.fadeOut(500, function(){    
+        killer_skull.children().remove();
     })
     .delay(300)
     .fadeIn(300)
     ;
 }
-/*END: Skull Animation*/
 
+function ShowSkullAnimation_New() {
+    if(killer_skull.children().length > 0) return;
+    killer_skull.append("<div").addClass("killer_skull").effect( "fade"
+    , {}, 500
+    , function(){
+        killer_skull.children().remove();
+    });
+}
+function ShowSkullAnimation() {
+    ShowSkullAnimation_New();
+}
+/*END: Skull Animation*/
 
 //For test
 //setInterval( function() {
@@ -153,5 +169,5 @@ function ShowSkullAnimation() {
 //addDamageText("dos7", "dos8", 3, 0);
 //addDamageText("dos7", "dos8", 3, 0);
 //setInterval( function(){
-    ShowSkullAnimation();
+//    ShowSkullAnimation();
 //}, 1000 );
