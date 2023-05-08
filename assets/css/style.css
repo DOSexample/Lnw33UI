@@ -94,12 +94,13 @@ p{
   padding-bottom: 20px;
   right: 8%;
   top: 270px;
+  width: 120px;
   background-size: contain;
 }
 
 .topKill div {
   width: 200%;
-  margin: 5px;
+  margin: 10px;
 }
 
 .topKill .text {

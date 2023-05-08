@@ -23,27 +23,6 @@ function clearUITopKill()
  */
 function createTopKillRank(obj, id, top)
 {
-/*
-    <div class="GLOWGT">
-        <p class="AmblemRed">&nbsp;</p>
-        <p class="Symbol1GT">&nbsp;</p>
-        <p>1234567891011</p>
-        <p class="right">Kills: 123</p>
-    </div>
-    <div class="GLOWRS">
-        <p class="AmblemPurple">&nbsp;</p>
-        <p class="Symbol1RS">&nbsp;</p>
-        <p>DOSSSSSSSSS</p>
-        <p class="right">Kills: 123</p>
-    </div>
-    <div class="GLOWND">
-        <p class="AmblemBlue">&nbsp;</p>
-        <p class="Symbol1ND">&nbsp;</p>
-        <p>ddddd121</p>
-        <p class="right">Kills: 123</p>
-    </div>
-*/
-    console.log(top.name+","+top.clan+","+top.point);
     if(top.point>0)
     {
         const clan = config.clans[top.clan];
@@ -79,9 +58,9 @@ function createUITopKill(top1, top2, top3)
 
 //For test
 //createUITopKill(
-//    {name: 'FANTASTICV2', point: 5, clan: 2},
-//    {name: '', point: 0, clan: 0},
-//    {name: 'PrincessToey', point: 8, clan: 2}
+//    {name: 'DOS', point: 5, clan: 2},
+//    {name: 'DOS2', point: 6, clan: 0},
+//    {name: 'DOS3', point: 8, clan: 2}
 //);
 //setInterval( function(){
 //    createUITopKill(
