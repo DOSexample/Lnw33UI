@@ -93,64 +93,17 @@ function startDamageTextLogic()
 
 
 /*START: Skull Animation*/
-//var killer_skull = document.getElementById("killer_skull");
-//function ShowSkullAnimation_old() {
-//    if(killer_skull.childElementCount >= 1) return;
-//
-//	var k = document.createElement("img");    
-//	k.src = config.getImage("UI_ICON_KILL");
-//    k.style.position = "absolute";
-//	killer_skull.appendChild(k);
-//
-//    var op = 0.1;
-//    var increment = +0.1;
-//    k.style.opacity = 0;
-//    //k.style.display = 'inline';
-//	var kwidth = 105;
-//	var kheight = 110;
-//	//k.style.width = kwidth + "%";
-//	var wIncrement = 2;
-//
-//    var timer = setInterval(function(k) {
-//        k.style.width = kwidth + wIncrement + "px";
-//        k.style.height = kheight + wIncrement + "px";
-//        kwidth++;
-//        kheight++;
-//        op += increment;
-//        k.style.opacity = op;
-//        if (op >= 1) increment = -increment;
-//        if (op <= 0) {
-//            k.style.display = 'none';
-//            killer_skull.removeChild(killer_skull.getElementsByTagName("img")[0]);
-//            clearInterval(timer); // end
-//        }
-//    }, 50, k);
-//}
+function ShowSkullAnimation() {
+    var kid = $("#killer_skull");
+    if(kid.children().length > 0) return;
 
-var killer_skull = $("#killer_skull");
-
-function ShowSkullAnimation_Old() {
-    //if( $(kid).children().length > 0 ) return;
-
-    killer_skull.append("<div>");
-    killer_skull.fadeOut(500, function(){    
-        killer_skull.children().remove();
-    })
-    .delay(300)
-    .fadeIn(300)
-    ;
-}
-
-function ShowSkullAnimation_New() {
-    if(killer_skull.children().length > 0) return;
-    killer_skull.append("<div").addClass("killer_skull").effect( "fade"
+    kid.append("<div>")
+    .addClass("killer_skull")
+    .effect( "fade"
     , {}, 500
     , function(){
-        killer_skull.children().remove();
+        kid.children().remove();
     });
-}
-function ShowSkullAnimation() {
-    ShowSkullAnimation_New();
 }
 /*END: Skull Animation*/
 
@@ -170,4 +123,4 @@ function ShowSkullAnimation() {
 //addDamageText("dos7", "dos8", 3, 0);
 //setInterval( function(){
 //    ShowSkullAnimation();
-//}, 1000 );
+//}, 100 );

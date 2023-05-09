@@ -52,14 +52,14 @@ p{
   position: fixed;
   top: 35%;
   left: 45%;
-  width: 305px;
+  width: 105px;
   height: 110px;
 }
 
 .killer_skull div {
   position: absolute;
-  width: 105px; 
-  height: 110px;
+  width: 100%;
+  height: 100%;
   background: url("../images/UI_ICON_KILL.png") no-repeat;
 }
 
@@ -88,12 +88,12 @@ p{
 
 .topKill {
   position: fixed;
+  right: 90px;
+  top: 270px;
   /*border-radius: 15px;*/
   padding-left: 20px;
   padding-right: 50px;
   padding-bottom: 20px;
-  right: 8%;
-  top: 270px;
   width: 120px;
   background-size: contain;
 }
@@ -126,7 +126,7 @@ p{
 }
 
 .GLOWN {
-  background-image: url('../images/UI_IMG_GLOW_GT.png');
+  background-image: url('../images/UI_IMG_GLOW_N.png');
 }
 
 .Amblem {
@@ -135,6 +135,8 @@ p{
   background-repeat: no-repeat;
   width: 40px;
   height: 48px;
+  margin-left: 10px;
+  margin-top: -6px;
 }
 
 .AmblemBlue {
@@ -156,22 +158,29 @@ p{
   background-repeat: no-repeat;
   width: 30px;
   height: 38px;
-  margin: 7px 5px;
 }
 
 .Symbol1ND {
   background-image: url('../images/UI_SYMBOL_1_ND.png');
+  margin-left: 15px;
+  margin-top: 4px;
 }
 
 .Symbol1RS {
   background-image: url('../images/UI_SYMBOL_1_RS.png');
+  margin-left: 15px;
+  margin-top: 0px;
 }
 
 .Symbol1GT {
   background-image: url('../images/UI_SYMBOL_1_GT.png');
+  margin-left: 15px;
+  margin-top: -1px;
 }
 .Symbol1N {
   background-image: url('../images/UI_SYMBOL_1_N.png');
+  margin-left: 16px;
+  margin-top: -3px;
 }
 
 .itemEffect {

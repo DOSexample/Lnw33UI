@@ -1,4 +1,3 @@
-
 const TopKillUI = {
     root: null,
     top1: null,
@@ -58,14 +57,29 @@ function createUITopKill(top1, top2, top3)
 
 //For test
 //createUITopKill(
-//    {name: 'DOS', point: 5, clan: 2},
+//    {name: 'DOS1', point: 5, clan: 2},
 //    {name: 'DOS2', point: 6, clan: 0},
-//    {name: 'DOS3', point: 8, clan: 2}
+//    {name: 'DOS3', point: 8, clan: 1}
 //);
+//function randomTopRank()
+//{
+//    var r = Math.round(Math.random()*1000000) % 10;
+//    var v = 0;
+//    switch(r)
+//    {
+//        case 0: v = 10; break;
+//        case 1: v = 100; break;
+//        case 2: v = 1000; break;
+//        case 3: v = 10000; break;
+//        default : v = 100000; break;
+//    }
+//    var name = Math.round(Math.random()*v);
+//    return {name: 'DOS'+name, point: Math.round(Math.random()*10000000), clan: Math.round(Math.random()*10)%4};
+//}
 //setInterval( function(){
 //    createUITopKill(
-//        {name: 'DOS', point: Math.round(Math.random()*100), clan: 1},
-//        {name: 'DOS2', point: Math.round(Math.random()*100), clan: 2},
-//        {name: 'DOS3', point: Math.round(Math.random()*100), clan: 0}
+//        randomTopRank(),
+//        randomTopRank(),
+//        randomTopRank()
 //    );
-//}, 1000);
+//}, 100);
