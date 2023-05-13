@@ -1,4 +1,4 @@
-if(String.prototype.padStart !== 'object'){
+if(typeof(String.prototype.padStart) !== 'function'){
 
 String.prototype.padStart = function(length, padString) {
     var str = this;

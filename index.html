@@ -33,8 +33,16 @@
 <script src="assets/scripts/ItemEffectSystem.js"></script>
 
 <script>
-//$(document).ready(function () {
-//});
+$(document).ready(function () {
+    //Disable mousedown event on page
+    document.addEventListener("mousedown", handler, true);
+    function handler(e) {
+        e.stopPropagation();
+        e.preventDefault();
+        return false;
+    }
+});
+
 
 /**
  * 

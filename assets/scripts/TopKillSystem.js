@@ -22,11 +22,11 @@ function clearUITopKill()
  */
 function createTopKillRank(obj, id, top)
 {
-    if(top.point>0)
+    if(top.point>0&&top.clan>=0&&top.clan<=3)
     {
         const clan = config.clans[top.clan];
         obj = document.createElement("div");
-        obj.className = "GLOW GLOW"+config.clans[top.clan].code;
+        obj.className = "GLOW GLOW"+clan.code;
         obj.innerHTML = 
             '<p class="Amblem Amblem'+clan.amblem+'"></p>'+
             '<p class="Symbol1 Symbol1'+clan.code+'"></p>'+

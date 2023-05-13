@@ -4,6 +4,7 @@ const uiTimer = {
     span: null,
     tick: 0,
     interval: null,
+    show: false,
     getText: function()
     {
         const obj = getMiniuteAndSecond(this.tick);
@@ -42,6 +43,7 @@ function clearUITimerInterval()
     if(uiTimer.interval!=null)
         clearInterval(uiTimer.interval);
     uiTimer.interval=null;
+    uiTimer.show = false;
 }
 
 function createUITimer(secondsNum)
@@ -77,6 +79,7 @@ function createUITimer(secondsNum)
         return;
     }
 
+    uiTimer.show = true;
     uiTimer.interval = setInterval( function() {
         const obj = getMiniuteAndSecond(uiTimer.tick);
         uiTimer.span.innerText = uiTimer.getText();
@@ -88,6 +91,8 @@ function createUITimer(secondsNum)
 function setUITimer(secondsNum)
 {
     uiTimer.tick = secondsNum;
+    if(!uiTimer.show)
+        createUITimer(secondsNum);
 }
 
 //For test

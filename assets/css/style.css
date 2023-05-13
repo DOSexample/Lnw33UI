@@ -135,7 +135,7 @@ p{
   background-repeat: no-repeat;
   width: 40px;
   height: 48px;
-  margin-left: 10px;
+  margin-left: 40px;
   margin-top: -6px;
 }
 
@@ -162,24 +162,24 @@ p{
 
 .Symbol1ND {
   background-image: url('../images/UI_SYMBOL_1_ND.png');
-  margin-left: 15px;
+  margin-left: 45px;
   margin-top: 4px;
 }
 
 .Symbol1RS {
   background-image: url('../images/UI_SYMBOL_1_RS.png');
-  margin-left: 15px;
+  margin-left: 45px;
   margin-top: 0px;
 }
 
 .Symbol1GT {
   background-image: url('../images/UI_SYMBOL_1_GT.png');
-  margin-left: 15px;
+  margin-left: 45px;
   margin-top: -1px;
 }
 .Symbol1N {
   background-image: url('../images/UI_SYMBOL_1_N.png');
-  margin-left: 16px;
+  margin-left: 46px;
   margin-top: -3px;
 }
 
