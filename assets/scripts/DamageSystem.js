@@ -48,7 +48,7 @@ function addDamageText(attackerName, defenserName, attackerClan, defenserClan)
     var attackerImg = createDamageImage(attackerClan);
     var attackerSpan = createDamageSpan(attackerName,attackerClan);
 
-    var killedSpan = createDamageSpan("Killed");
+    var killedSpan = createDamageSpan("&nbsp;&nbsp;Killed&nbsp;&nbsp;");
     killedSpan.className = "killed";
     //var killedSpan = document.createElement("img");
     //killedSpan.src = config.getImage("UI_ICON_KILL");

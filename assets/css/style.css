@@ -46,6 +46,7 @@ p{
 .killed {
   color: #E9B800;
   padding-left: 5px;
+  font-size: small;
 }
 
 .killer_skull {
@@ -231,4 +232,11 @@ p{
   width: 466px;
   height: 89px;
   background: url("../images/UI_IMG_COMBINE_FAIL.png") no-repeat;
+}
+
+.DGuardArea {
+  position: absolute;
+}
+#DGuardText {
+  color: white;
 }
