@@ -8,11 +8,9 @@ var ts2dguard = {
         body: "",
     },
     changeLoginMode: false,
-    area: null,
 };
 
 ts2dguard.html = document.getElementById( ts2dguard.id );
-ts2dguard.area = document.getElementsByClassName("DGuardArea")[0];
 ts2dguard.html.innerHTML = "Connecting to TS2DGuard...";
 
 ts2dguard.reset = function() {
@@ -55,16 +53,11 @@ ts2dguard.onConnect = function() {
 }
 
 ts2dguard.setText = function(text) {
-    this.on();
     this.html.innerHTML = text;
 }
 
-ts2dguard.on = function() {
-    this.area.style.display = "block";
-}
-
 ts2dguard.off = function() {
-    this.area.style.display = "none";
+    this.html.style.display = "none";
 }
 
 ts2dguard.changeToLoginMode = function() {
