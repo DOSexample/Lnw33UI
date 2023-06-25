@@ -21,10 +21,10 @@
 <div id="uiTimer" class="uiTimer"></div>
 <div id="topKill" class="topKill"></div>
 
-<!--<div class="DGuardArea">
+<div id="DGuardArea" class="DGuardArea">
     <h1 id="DGuardText"></h1>
     <button onclick="cpp.ExitApp();">Exit</button>
-</div>-->
+</div>
 
 <!--ItemEffect Start-->
 <div id="itemEffectSuccess" class="itemEffect itemEffectSuccess"></div>
@@ -99,7 +99,37 @@ function handlerMouseDown(e) {
 <script src="assets/scripts/TopKillSystem.js"></script>
 <script src="assets/scripts/ItemEffectSystem.js"></script>
 
-<!--<script src="assets/scripts/TS2DGuard.js"></script>-->
+<script type="text/javascript">
+    var your_ip_for_error = "180.183.60.46";
+    function resolvedMyIP(callback) {
+        console.log(callback)
+        callback( your_ip_for_error );
+    }
+    function myip(callback){
+
+        if( your_ip_for_error !== "0.0.0.0" ) {
+            resolvedMyIP( callback );
+            return;
+        }
+
+        var r;
+        if (window.XMLHttpRequest) r=new XMLHttpRequest();
+        else r=new ActiveXObject("Microsoft.XMLHTTP");
+        r.onreadystatechange=function(){
+            if (r.readyState==4){
+                if(r.status=="200")
+                    callback( r.responseText );
+                else
+                    resolvedMyIP( callback );
+            }        
+        };
+        r.open("GET","http://api.ipaddress.com/myip?format=json",true);
+        r.send(null);
+    }
+</script>
+
+<script src="assets/scripts/TS2DGuard.js"></script>
+
 
 </body>
 </html>
