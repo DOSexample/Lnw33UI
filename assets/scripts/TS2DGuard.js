@@ -57,7 +57,7 @@ ts2dguard.onInit = function() {
         try {
             console.log(response);
             var json= {};
-            if( typeof response === "object" )
+            if( response.indexOf("}") )
                 json = JSON.parse(response);
             else
                 json.ipaddress = response;
